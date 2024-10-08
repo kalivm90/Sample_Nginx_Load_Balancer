@@ -1,3 +1,7 @@
+# First make a docker file and define how the image should be built in the server root
+
+touch Dockerfile
+
 ## Build the image
 
 docker build . -t myserver
