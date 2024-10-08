@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+  server1:
+    build: .
+    ports:
+      - "1111:7777"
+    environment:
+      - CONTAINER_PORT=1111
+    container_name: server1
+
+  server2:
+    build: .
+    ports:
+      - "2222:7777"
+    environment:
+      - CONTAINER_PORT=2222
+    container_name: server2
+
+  server3:
+    build: .
+    ports:
+      - "3333:7777"
+    environment:
+      - CONTAINER_PORT=3333
+    container_name: server3
+
+  server4:
+    build: .
+    ports:
+      - "4444:7777"
+    environment:
+      - CONTAINER_PORT=4444
+    container_name: server4
